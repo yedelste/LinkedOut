@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedOut",
+  "version": "1.0",
+  "description": "Replaces the LinkedIn home feed with a healthier message.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://linkedin.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
